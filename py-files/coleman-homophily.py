@@ -2,8 +2,8 @@ import pandas as pd
 import numpy as np
 
 # Input and output paths
-INPUT_PATH = "/workspaces/network-analysis/actual-code/input-files/roc_network_data_follow_up.csv"
-OUTPUT_PATH = "/workspaces/network-analysis/actual-code/output-files/coleman-homophily.csv"
+INPUT_PATH = "/workspaces/ROC-network-analysis/input-files/roc_network_data_follow_up.csv"
+OUTPUT_PATH = "/workspaces/ROC-network-analysis/output-files/coleman-homophily.csv"
 
 # Load data
 usecols = [

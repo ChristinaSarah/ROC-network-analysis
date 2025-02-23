@@ -122,4 +122,4 @@ def compute_high_nomination_counts(input_csv: str, output_csv: str) -> None:
 
 # --------------------
 # Example usage:
-compute_high_nomination_counts("/workspaces/network-analysis/actual-code/input-files/roc_network_data_follow_up.csv", "/workspaces/network-analysis/actual-code/output-files/high_nomination_counts.csv")
+compute_high_nomination_counts("/workspaces/ROC-network-analysis/input-files/roc_network_data_follow_up.csv", "/workspaces/ROC-network-analysis/output-files/high_nomination_counts.csv")

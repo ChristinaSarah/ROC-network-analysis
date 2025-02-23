@@ -5,7 +5,7 @@ import numpy as np
 
 
 # Step 1: Load dataset
-df = pd.read_csv("/workspaces/network-analysis/actual-code/input-files/roc_network_data_follow_up.csv")  # Change "data.csv" to your actual file name
+df = pd.read_csv("/workspaces/ROC-network-analysis/input-files/roc_network_data_follow_up.csv")  # Change "data.csv" to your actual file name
 
 
 # Step 2: Create dictionaries mapping student IDs to ability levels
@@ -73,5 +73,5 @@ for ability_name, ability_dict in ability_types.items():
 
 
 # Step 5: Export the updated dataset
-df.to_csv("/workspaces/network-analysis/actual-code/output-files/follow_up_inter_ability.csv", index=False)  # Saves the new dataset
+df.to_csv("/workspaces/ROC-network-analysis/output-files/follow_up_inter_ability.csv", index=False)  # Saves the new dataset
 print("Updated dataset saved as follow_up_inter_ability.csv")

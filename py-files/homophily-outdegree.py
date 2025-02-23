@@ -146,7 +146,7 @@ def compute_same_ability_homophily(
 
 # Example usage:
 compute_same_ability_homophily(
-    input_csv="/workspaces/network-analysis/actual-code/input-files/roc_network_data_follow_up.csv",
-    output_csv="/workspaces/network-analysis/actual-code/output-files/homophily-outdegree.csv"
+    input_csv="/workspaces/ROC-network-analysis/input-files/roc_network_data_follow_up.csv",
+    output_csv="/workspaces/ROC-network-analysis/output-files/homophily-outdegree.csv"
 )
 

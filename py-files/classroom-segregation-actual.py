@@ -111,7 +111,7 @@ def compute_num(n_r, n_h, p_r, p_h):
     return sum
 
 # 1) Load only columns needed
-df = pd.read_csv("/workspaces/network-analysis/actual-code/input-files/roc_network_data_follow_up.csv",
+df = pd.read_csv("/workspaces/ROC-network-analysis/input-files/roc_network_data_follow_up.csv",
                  usecols=["fs_classroom","fs_student_id","high_math","emot_1","emot_2","emot_3"])
 
 # 2) If 'high_math' is 'yes'/'no', convert to 1/0
@@ -192,4 +192,4 @@ print("Done. 'classroom_arrays.csv' saved.")
 print("Sample output:")
 print(final_df.head())
 
-compute_cross_ability_ratio("/workspaces/ROC-network-analysis/actual-code/input-files/roc_network_data_follow_up.csv", "/workspaces/ROC-network-analysis/output-files/classroom_segregation_actual.csv")
+compute_cross_ability_ratio("/workspaces/ROC-network-analysis/input-files/roc_network_data_follow_up.csv", "/workspaces/ROC-network-analysis/output-files/classroom_segregation_actual.csv")

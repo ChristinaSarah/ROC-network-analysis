@@ -47,7 +47,7 @@ def compute_num(n_r, n_h, p_r, p_h):
     return sum
 
 # 1) Load only columns needed
-df = pd.read_csv("/workspaces/network-analysis/actual-code/input-files/roc_network_data_follow_up.csv",
+df = pd.read_csv("/workspaces/ROC-network-analysis/input-files/roc_network_data_follow_up.csv",
                  usecols=["fs_classroom","fs_student_id","high_math","emot_1","emot_2","emot_3"])
 
 # 2) If 'high_math' is 'yes'/'no', convert to 1/0
@@ -122,7 +122,7 @@ pivoted["mu"] = list(mu.tolist())
 final_df = pivoted[["fs_classroom","low_array","high_array","mu"]]
 
 # 13) Write to CSV. The arrays will show up as string representations (e.g. "[1, 2, 0]")
-final_df.to_csv("/workspaces/network-analysis/actual-code/output-files/classroom_segregation_theoretical.csv", index=False)
+final_df.to_csv("/workspaces/ROC-network-analysis/output-files/classroom_segregation_theoretical.csv", index=False)
 
 print("Done. 'classroom_segregation_theoretical.csv' saved.")
 print("Sample output:")
