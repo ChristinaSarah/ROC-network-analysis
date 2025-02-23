@@ -192,4 +192,4 @@ print("Done. 'classroom_arrays.csv' saved.")
 print("Sample output:")
 print(final_df.head())
 
-compute_cross_ability_ratio("/workspaces/network-analysis/actual-code/input-files/roc_network_data_follow_up.csv", "/workspaces/network-analysis/actual-code/output-files/classroom_segregation_actual.csv")
+compute_cross_ability_ratio("/workspaces/ROC-network-analysis/actual-code/input-files/roc_network_data_follow_up.csv", "/workspaces/ROC-network-analysis/output-files/classroom_segregation_actual.csv")
