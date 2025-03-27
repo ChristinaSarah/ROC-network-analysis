@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Load the data
-df = pd.read_csv("/workspaces/ROC-network-analysis/input-files/roc_network_data.csv")
+df = pd.read_csv("/workspaces/ROC-network-analysis/input-files/roc_network_data_endline.csv")
 
 # Create sets of all students who are listed at least once as emotional or academic support
 friend_support_set = set(pd.to_numeric(df["friend_1"].dropna(), downcast="integer")) \
