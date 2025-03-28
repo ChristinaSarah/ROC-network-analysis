@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Load the data
-df = pd.read_csv("/workspaces/ROC-network-analysis/input-files/roc_network_data_follow_up.csv")
+df = pd.read_csv("/workspaces/ROC-network-analysis/input-files/roc_network_data_follow_up_high_ability.csv")
 
 # We'll compute classroom-level network indicators by grouping on 'fs_classroom'.
 # For each classroom, we only consider edges (nominations) where both the nominator and
@@ -79,5 +79,5 @@ for classroom, group in df.groupby("fs_classroom"):
 out_df = pd.DataFrame(results)
 
 # Export to CSV
-out_df.to_csv("/workspaces/ROC-network-analysis/output-files/roc_isolation_reciprocity_follow_up.csv", index=False)
+out_df.to_csv("/workspaces/ROC-network-analysis/output-files/roc_isolation_reciprocity_follow_up_high_ability.csv", index=False)
 print("Done. 'roc_isolation_reciprocity_follow_up.csv' saved.")
